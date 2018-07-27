@@ -1,0 +1,14 @@
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\bin\Debug\netcoreapp2.1\FindCore.GatewayAPI.deps.json
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\bin\Debug\netcoreapp2.1\FindCore.GatewayAPI.runtimeconfig.json
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\bin\Debug\netcoreapp2.1\FindCore.GatewayAPI.runtimeconfig.dev.json
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\bin\Debug\netcoreapp2.1\FindCore.GatewayAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\bin\Debug\netcoreapp2.1\FindCore.GatewayAPI.pdb
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.csprojResolveAssemblyReference.cache
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.csproj.CoreCompileInputs.cache
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.RazorAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.RazorAssemblyInfo.cs
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.AssemblyInfoInputs.cache
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.AssemblyInfo.cs
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.RazorTargetAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.GatewayAPI\obj\Debug\netcoreapp2.1\FindCore.GatewayAPI.pdb

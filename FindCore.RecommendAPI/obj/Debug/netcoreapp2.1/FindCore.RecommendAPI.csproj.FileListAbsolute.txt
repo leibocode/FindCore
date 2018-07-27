@@ -1,0 +1,14 @@
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\bin\Debug\netcoreapp2.1\FindCore.RecommendAPI.deps.json
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\bin\Debug\netcoreapp2.1\FindCore.RecommendAPI.runtimeconfig.json
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\bin\Debug\netcoreapp2.1\FindCore.RecommendAPI.runtimeconfig.dev.json
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\bin\Debug\netcoreapp2.1\FindCore.RecommendAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\bin\Debug\netcoreapp2.1\FindCore.RecommendAPI.pdb
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.csprojResolveAssemblyReference.cache
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.csproj.CoreCompileInputs.cache
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.RazorAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.RazorAssemblyInfo.cs
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.AssemblyInfoInputs.cache
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.AssemblyInfo.cs
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.RazorTargetAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.RecommendAPI\obj\Debug\netcoreapp2.1\FindCore.RecommendAPI.pdb

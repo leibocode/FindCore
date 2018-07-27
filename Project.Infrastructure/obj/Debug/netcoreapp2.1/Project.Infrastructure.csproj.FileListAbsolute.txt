@@ -3,3 +3,12 @@ G:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Proje
 G:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.csproj.CoreCompileInputs.cache
 G:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfoInputs.cache
 G:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfo.cs
+H:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Infrastructure.deps.json
+H:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Infrastructure.dll
+H:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Infrastructure.pdb
+H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.csprojResolveAssemblyReference.cache
+H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.csproj.CoreCompileInputs.cache
+H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfoInputs.cache
+H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfo.cs
+H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.dll
+H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.pdb

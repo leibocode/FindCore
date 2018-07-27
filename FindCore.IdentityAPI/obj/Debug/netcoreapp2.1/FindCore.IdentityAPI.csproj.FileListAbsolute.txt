@@ -1,0 +1,14 @@
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\bin\Debug\netcoreapp2.1\FindCore.IdentityAPI.deps.json
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\bin\Debug\netcoreapp2.1\FindCore.IdentityAPI.runtimeconfig.json
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\bin\Debug\netcoreapp2.1\FindCore.IdentityAPI.runtimeconfig.dev.json
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\bin\Debug\netcoreapp2.1\FindCore.IdentityAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.csprojResolveAssemblyReference.cache
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.csproj.CoreCompileInputs.cache
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.RazorAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.RazorAssemblyInfo.cs
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.AssemblyInfoInputs.cache
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.AssemblyInfo.cs
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.RazorTargetAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\bin\Debug\netcoreapp2.1\FindCore.IdentityAPI.pdb
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.IdentityAPI\obj\Debug\netcoreapp2.1\FindCore.IdentityAPI.pdb

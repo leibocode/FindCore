@@ -9,3 +9,6 @@ H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.Us
 H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.AssemblyInfoInputs.cache
 H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.AssemblyInfo.cs
 H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.RazorTargetAssemblyInfo.cache
+H:\dotnet\07架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.pdb
+H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.dll
+H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.pdb

@@ -1,0 +1,9 @@
+H:\dotnet\07架构\FindCore\Project.Domain\bin\Debug\netcoreapp2.1\Project.Domain.deps.json
+H:\dotnet\07架构\FindCore\Project.Domain\bin\Debug\netcoreapp2.1\Project.Domain.dll
+H:\dotnet\07架构\FindCore\Project.Domain\obj\Debug\netcoreapp2.1\Project.Domain.csprojResolveAssemblyReference.cache
+H:\dotnet\07架构\FindCore\Project.Domain\obj\Debug\netcoreapp2.1\Project.Domain.csproj.CoreCompileInputs.cache
+H:\dotnet\07架构\FindCore\Project.Domain\obj\Debug\netcoreapp2.1\Project.Domain.AssemblyInfoInputs.cache
+H:\dotnet\07架构\FindCore\Project.Domain\obj\Debug\netcoreapp2.1\Project.Domain.AssemblyInfo.cs
+H:\dotnet\07架构\FindCore\Project.Domain\bin\Debug\netcoreapp2.1\Project.Domain.pdb
+H:\dotnet\07架构\FindCore\Project.Domain\obj\Debug\netcoreapp2.1\Project.Domain.dll
+H:\dotnet\07架构\FindCore\Project.Domain\obj\Debug\netcoreapp2.1\Project.Domain.pdb

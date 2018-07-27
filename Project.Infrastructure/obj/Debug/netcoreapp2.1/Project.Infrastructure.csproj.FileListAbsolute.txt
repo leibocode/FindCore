@@ -1,0 +1,5 @@
+G:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Infrastructure.deps.json
+G:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Infrastructure.dll
+G:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.csproj.CoreCompileInputs.cache
+G:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfoInputs.cache
+G:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfo.cs

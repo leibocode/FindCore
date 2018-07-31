@@ -11,3 +11,17 @@ H:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore
 H:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.RazorTargetAssemblyInfo.cache
 H:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.dll
 H:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.pdb
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\bin\Debug\netcoreapp2.1\FindCore.ContactAPI.deps.json
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\bin\Debug\netcoreapp2.1\FindCore.ContactAPI.runtimeconfig.json
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\bin\Debug\netcoreapp2.1\FindCore.ContactAPI.runtimeconfig.dev.json
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\bin\Debug\netcoreapp2.1\FindCore.ContactAPI.dll
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\bin\Debug\netcoreapp2.1\FindCore.ContactAPI.pdb
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.csprojAssemblyReference.cache
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.csproj.CoreCompileInputs.cache
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.RazorAssemblyInfo.cache
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.RazorAssemblyInfo.cs
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.AssemblyInfoInputs.cache
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.AssemblyInfo.cs
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.RazorTargetAssemblyInfo.cache
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.dll
+G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.pdb

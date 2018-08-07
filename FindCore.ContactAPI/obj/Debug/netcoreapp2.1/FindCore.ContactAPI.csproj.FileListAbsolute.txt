@@ -25,3 +25,4 @@ G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore
 G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.RazorTargetAssemblyInfo.cache
 G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.dll
 G:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.pdb
+H:\dotnet\07架构\FindCore\FindCore.ContactAPI\obj\Debug\netcoreapp2.1\FindCore.ContactAPI.csprojResolveAssemblyReference.cache

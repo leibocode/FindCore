@@ -26,7 +26,24 @@ namespace FindCore.UserAPI.Data
             //用户属性配置
             modelBuilder.Entity<UserProperty>(b =>
             {
+                b.ToTable("UserProperties");
+                b.Property(a => a.Key).HasMaxLength(100);
+                b.Property(a => a.Value).HasMaxLength(100);
+                b.HasKey(a => new {a.AppUserId,a.Key,a.Value });
+            });
 
+            //用户标签 
+            modelBuilder.Entity<UserTag>(b =>
+            {
+                b.ToTable("UserTag");
+                b.Property(a => a.Tag).HasMaxLength(100);
+                b.HasKey(a => new {a.AppUserId,a.Tag });
+            });
+
+            modelBuilder.Entity<BPFile>(b =>
+            {
+                b.ToTable("BPFiles");
+                b.HasKey(a => a.Id);
             });
 
             base.OnModelCreating(modelBuilder);

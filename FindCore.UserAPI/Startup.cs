@@ -12,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
+using System.IdentityModel.Tokens.Jwt;
 namespace FindCore.UserAPI
 {
     public class Startup
@@ -29,11 +29,17 @@ namespace FindCore.UserAPI
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            
+            //mysql
             services.AddDbContext<UserContext>(options =>
             {
                 options.UseMySQL(Configuration.GetConnectionString("MysqlUser"));
 
             });
+
+            //清楚默认的JwtToKen默认的绑定
+            JwtSecurityTokenHandlerf.DefaultInboundClaimTypeMap.Clear();
+            //services.addAuth
 
             #region 全局异常处理
             services.AddMvc(options =>

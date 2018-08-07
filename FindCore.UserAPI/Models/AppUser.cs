@@ -33,7 +33,7 @@ namespace FindCore.UserAPI.Models
         public string Phone { get; set; }
 
         /// <summary>
-        /// 头像地址
+        /// 头像地址,云上地址
         /// </summary>
         public string Avatar { get; set; }
 
@@ -47,8 +47,15 @@ namespace FindCore.UserAPI.Models
         /// </summary>
         public string Email { get; set; }
 
-        public string Tel { get; set; }
+        public string Province { get; set; }
 
+        public string CityId { get; set; }
+
+        public string City { get; set; }
+
+        public string NameCard { get; set; }
+
+        public List<UserProperty> Properties { get; set; }
 
     }
 

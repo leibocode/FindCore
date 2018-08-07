@@ -32,6 +32,9 @@ namespace FindCore.UserAPI.Models
         /// </summary>
         public string FromatFilePash { get; set; }
 
+        /// <summary>
+        /// 创建时间
+        /// </summary>
         public DateTime CreateTime { get; set; }
     }
 }

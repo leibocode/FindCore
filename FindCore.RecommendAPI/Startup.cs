@@ -40,8 +40,8 @@ namespace FindCore.RecommendAPI
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseMvc();
+            //启动Ocelot管道
+           
         }
     }
 }

@@ -38,7 +38,7 @@ namespace FindCore.UserAPI
             });
 
             //清楚默认的JwtToKen默认的绑定
-            JwtSecurityTokenHandlerf.DefaultInboundClaimTypeMap.Clear();
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             //services.addAuth
 
             #region 全局异常处理

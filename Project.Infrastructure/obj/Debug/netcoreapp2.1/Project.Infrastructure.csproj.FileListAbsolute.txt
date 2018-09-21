@@ -12,3 +12,5 @@ H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Proje
 H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.AssemblyInfo.cs
 H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.dll
 H:\dotnet\07架构\FindCore\Project.Infrastructure\obj\Debug\netcoreapp2.1\Project.Infrastructure.pdb
+H:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Domain.dll
+H:\dotnet\07架构\FindCore\Project.Infrastructure\bin\Debug\netcoreapp2.1\Project.Domain.pdb

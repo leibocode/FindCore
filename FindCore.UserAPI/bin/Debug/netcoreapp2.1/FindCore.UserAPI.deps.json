@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "ecec01fa3132ad8e476fdf8a3a9bc7ee0427a8c4"
+    "signature": "056a5dc28e6cd288ae66c00b2caab57e44e1c3c6"
   },
   "compilationOptions": {
     "defines": [
@@ -28,7 +28,8 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.JsonPatch": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
-          "MySql.Data.EntityFrameworkCore": "8.0.11"
+          "MySql.Data.EntityFrameworkCore": "8.0.11",
+          "NLog": "4.5.8"
         },
         "runtime": {
           "FindCore.UserAPI.dll": {}
@@ -283,6 +284,17 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "NLog/4.5.8": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.5.8.8046"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
         }
       },
       "System.Configuration.ConfigurationManager/4.4.0": {
@@ -3392,6 +3404,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "NLog/4.5.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t0NJVxerdU9QYgQQLa4XA3v1eLDBnJ5MF7AyoMxmJu38iAzrB4hVZYcCH3j0tKFKm7fOIx5jNbnAd9GD4mRTEA==",
+      "path": "nlog/4.5.8",
+      "hashPath": "nlog.4.5.8.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/4.4.0": {
       "type": "package",

@@ -1,11 +1,13 @@
-﻿using System;
+﻿using FindCore.ContactAPI.Models.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace FindCore.ContactAPI.Services
 {
-    public class IUserService
+    public interface IUserService
     {
+        Task<BaseUserInfo> GetBaseUserInfoAsync(int userId);
     }
 }

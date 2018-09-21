@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.Domain.SeedWork;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,8 +8,10 @@ namespace Project.Domain.AggregatesModel
     /// <summary>
     /// 项目实体
     /// </summary>
-    public class Project
+    public class Project:IAggregateRoot
     {
+        public int Id { get; set; }
+
         /// <summary>
         /// 用户ID
         /// </summary>

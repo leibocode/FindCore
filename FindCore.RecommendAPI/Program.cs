@@ -19,11 +19,6 @@ namespace FindCore.RecommendAPI
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                  .UseStartup<Startup>()
-                  .UseUrls("http://localhost:5000")
-                  .ConfigureAppConfiguration((host, builder) =>
-                  {
-                      builder.SetBasePath(host.HostingEnvironment.ContentRootPath).AddJsonFile("Ocelot.json", false, true);
-                  }).Build();
+                  .UseStartup<Startup>();
     }
 }

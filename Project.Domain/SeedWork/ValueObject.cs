@@ -9,6 +9,6 @@ namespace Project.Domain.SeedWork
     /// </summary>
     public abstract class ValueObject
     {
-
+         
     }
 }

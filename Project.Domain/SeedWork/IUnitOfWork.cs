@@ -13,6 +13,8 @@ namespace Project.Domain.SeedWork
     {
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken));
 
-        Task<bool> SaveEntitiesAsync(CancellationToken cancellationToken = default(CancellationToken));
+        Task<bool> SaveEntitesAsync(CancellationToken cancellationToken = default(CancellationToken));
+
+
     }
 }

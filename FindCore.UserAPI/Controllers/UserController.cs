@@ -36,7 +36,7 @@ namespace FindCore.UserAPI.Controllers
                                .Include(u => u.Properties).SingleOrDefaultAsync(b => b.Id == UserIdentity.UserId);
             if (User == null)
                 throw new OperationCanceledException();
-            
+            return Ok(users);
         }
 
 
@@ -45,53 +45,52 @@ namespace FindCore.UserAPI.Controllers
         /// </summary>
         /// <param name="patch"></param>
         /// <returns></returns>
-        [Route("")]
-        [HttpPatch]
-        public async Task<IActionResult> Patch([FromBody] JsonPatchDocument<AppUser> patch)
-        {
-            var entity = await _dbContext.Users.SingleOrDefaultAsync(b => b.Id == UserIdentity.UserId);
+        //[Route("")]
+        //[HttpPatch]
+        //public async Task<IActionResult> Patch([FromBody] JsonPatchDocument<AppUser> patch)
+        //{
+        //    var entity = await _dbContext.Users.SingleOrDefaultAsync(b => b.Id == UserIdentity.UserId);
 
-            //将需要更新的数据复制对象 
-            patch.ApplyTo(entity);
+        //    //将需要更新的数据复制对象 
+        //    patch.ApplyTo(entity);
 
-            //如果有修改的Properties 不追踪AppUser实体的
-            if (entity.Properties != null)
-            {
-                foreach (var item in entity.Properties)
-                {
-                    _dbContext.Entry(item).State = EntityState.Detached;
-                }
+        //    //如果有修改的Properties 不追踪AppUser实体的
+        //    if (entity.Properties != null)
+        //    {
+        //        foreach (var item in entity.Properties)
+        //        {
+        //            _dbContext.Entry(item).State = EntityState.Detached;
+        //        }
 
-                //获取原来用户所有的Properties ，必须使用
-                var originProperties = await _dbContext.UserProperties.AsNoTracking().Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync();
+        //        //获取原来用户所有的Properties ，必须使用
+        //        var originProperties = await _dbContext.UserProperties.AsNoTracking().Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync();
 
-                foreach (var item in originProperties)
-                {
-                    if (!entity.Properties.Exists(b => b.Key == item.Key && b.Value == item.Value))
-                    {
-                        //如果不存在做删除操作
-                        _dbContext.Remove(item);
-                    }
-                }
+        //        foreach (var item in originProperties)
+        //        {
+        //            if (!entity.Properties.Exists(b => b.Key == item.Key && b.Value == item.Value))
+        //            {
+        //                //如果不存在做删除操作
+        //                _dbContext.Remove(item);
+        //            }
+        //        }
 
-                foreach (var item in entity.Properties)
-                {
-                    if (!originProperties.Exists(b => b.Key == item.Key && b.Value == item.Value))
-                    {
-                        //如果不存在新增操作
-                        _dbContext.Add(item);
-                    }
-                }
+        //        foreach (var item in entity.Properties)
+        //        {
+        //            if (!originProperties.Exists(b => b.Key == item.Key && b.Value == item.Value))
+        //            {
+        //                //如果不存在新增操作
+        //                _dbContext.Add(item);
+        //            }
+        //        }
 
-                using (var transAction = _dbContext.Database.BeginTransaction())
-                { //当用户信息进行修改时，发送更新个人属性的消息
-                    //RaiseUserProfileChangeEvent(entity);
+        //        using (var transAction = _dbContext.Database.BeginTransaction())
+        //        { //当用户信息进行修改时，发送更新个人属性的消息
+        //            //RaiseUserProfileChangeEvent(entity);
 
-                }
-                // return JsonPatchDocument 
-
-            }
-        }
+        //        }
+        //        return null;
+        //    }
+        //}
 
 
         /// <summary>
@@ -125,15 +124,15 @@ namespace FindCore.UserAPI.Controllers
         /// </summary>
         /// <param name="tags"></param>
         /// <returns></returns>
-        [HttpPut]
-        [Route("tags")]
-        public async Task<IActionResult> UpdateTags([FormBody] List<string> tags)
-        {
-            var originTags = await _dbContext.UserTags.Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync();
-            //var newTags = tags.Except(originTags.Select(b => b.Tag));
-            //await _dbContext.UserTags.AddRangeAsync(newTags.Select(b=>))
+        //[HttpPut]
+        //[Route("tags")]
+        //public async Task<IActionResult> UpdateTags([FormBody] List<string> tags)
+        //{
+        //    var originTags = await _dbContext.UserTags.Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync();
+        //    //var newTags = tags.Except(originTags.Select(b => b.Tag));
+        //    //await _dbContext.UserTags.AddRangeAsync(newTags.Select(b=>))
 
-        }
+        //}
 
         /// <summary>
         /// 获取用户标签数据

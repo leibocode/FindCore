@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace FindCore.IdentityAPI.Services
 {
-    public class TestAuthCodeService
+    public class TestAuthCodeService : IAuthCodeService
     {
-
+        public async Task<bool> Validate(string phone, string authCode)
+        {
+            return true;
+        }
     }
 }

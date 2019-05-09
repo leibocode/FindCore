@@ -1,0 +1,11 @@
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\User.API.UnitTests.deps.json
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\User.API.UnitTests.runtimeconfig.json
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\User.API.UnitTests.runtimeconfig.dev.json
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\bin\Debug\netcoreapp2.1\User.API.UnitTests.dll
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\obj\Debug\netcoreapp2.1\User.API.UnitTests.csprojAssemblyReference.cache
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\obj\Debug\netcoreapp2.1\User.API.UnitTests.csproj.CoreCompileInputs.cache
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\obj\Debug\netcoreapp2.1\User.API.UnitTests.AssemblyInfoInputs.cache
+G:\dotnet\07架构\微服务架构\FindCore\User.API.UnitTests\obj\Debug\netcoreapp2.1\User.API.UnitTests.AssemblyInfo.cs

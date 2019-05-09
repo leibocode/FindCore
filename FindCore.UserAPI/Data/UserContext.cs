@@ -49,10 +49,12 @@ namespace FindCore.UserAPI.Data
             base.OnModelCreating(modelBuilder);
         }
 
-       public DbSet<AppUser> Users { get; set; }
+       public DbSet<AppUser> AppUsers { get; set; }
 
-        public DbSet<UserProperty> UserProperties { get; set; }
+        public DbSet<UserProperty> AppUserProperties { get; set; }
 
-        public DbSet<UserTag> UserTags { get; set; }
+        public DbSet<UserTag> AppUserTags { get; set; }
+
+        public DbSet<BPFile> BPFiles { get; set; }
     }
 }

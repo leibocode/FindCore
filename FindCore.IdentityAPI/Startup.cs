@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FindCore.IdentityAPI.Authentication;
+using FindCore.IdentityAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,6 +27,19 @@ namespace FindCore.IdentityAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //配置identityServer
+            services.AddIdentityServer()
+                    .AddExtensionGrantValidator<SmsAuthCodeValidator>()
+                    .AddDeveloperSigningCredential()
+                    .AddInMemoryClients(Config.GetClients())
+                    .AddInMemoryApiResources(Config.GetApiResources())
+                   ;
+            services.AddOptions();
+
+            services.AddScoped<IAuthCodeService,TestAuthCodeService>();
+            services.AddScoped<IUserService, UserService>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -39,8 +54,7 @@ namespace FindCore.IdentityAPI
             {
                 app.UseHsts();
             }
-
-            app.UseHttpsRedirection();
+            app.UseIdentityServer();
             app.UseMvc();
         }
     }

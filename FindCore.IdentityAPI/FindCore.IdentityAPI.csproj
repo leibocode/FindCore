@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Infrastucture\" />
+    <Folder Include="Options\" />
   </ItemGroup>
 
   <ItemGroup>

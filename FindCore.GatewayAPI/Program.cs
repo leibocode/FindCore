@@ -19,6 +19,10 @@ namespace FindCore.GatewayAPI
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                 .ConfigureAppConfiguration((conf,f)=> {
+                     f.SetBasePath(conf.HostingEnvironment.ContentRootPath).AddJsonFile("Ocelot.json");
+                 })
+                 .UseUrls("http://localhost:4000")
                 .UseStartup<Startup>();
     }
 }

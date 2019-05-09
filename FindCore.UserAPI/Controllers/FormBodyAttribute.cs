@@ -2,7 +2,8 @@
 
 namespace FindCore.UserAPI.Controllers
 {
-    internal class FormBodyAttribute : Attribute
+    public class FormBodyAttribute : Attribute
     {
+
     }
 }

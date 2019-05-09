@@ -12,3 +12,17 @@ H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.Us
 H:\dotnet\07架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.pdb
 H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.dll
 H:\dotnet\07架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.pdb
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.deps.json
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.runtimeconfig.json
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.runtimeconfig.dev.json
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.dll
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\bin\Debug\netcoreapp2.1\FindCore.UserAPI.pdb
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.csprojAssemblyReference.cache
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.csproj.CoreCompileInputs.cache
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.RazorAssemblyInfo.cache
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.RazorAssemblyInfo.cs
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.AssemblyInfoInputs.cache
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.AssemblyInfo.cs
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.RazorTargetAssemblyInfo.cache
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.dll
+G:\dotnet\07架构\微服务架构\FindCore\FindCore.UserAPI\obj\Debug\netcoreapp2.1\FindCore.UserAPI.pdb

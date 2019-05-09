@@ -1,0 +1,9 @@
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\bin\Debug\netcoreapp2.1\Resilience.Http.deps.json
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\bin\Debug\netcoreapp2.1\Resilience.Http.dll
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\bin\Debug\netcoreapp2.1\Resilience.Http.pdb
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\obj\Debug\netcoreapp2.1\Resilience.Http.csprojResolveAssemblyReference.cache
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\obj\Debug\netcoreapp2.1\Resilience.Http.csproj.CoreCompileInputs.cache
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\obj\Debug\netcoreapp2.1\Resilience.Http.AssemblyInfoInputs.cache
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\obj\Debug\netcoreapp2.1\Resilience.Http.AssemblyInfo.cs
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\obj\Debug\netcoreapp2.1\Resilience.Http.dll
+H:\dotnet\07架构\微服务架构\FindCore\Resilience.Http\obj\Debug\netcoreapp2.1\Resilience.Http.pdb

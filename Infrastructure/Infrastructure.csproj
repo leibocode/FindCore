@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Filter\" />
-    <Folder Include="OperationException\" />
+    <Compile Remove="Filter\**" />
+    <Compile Remove="OperationException\**" />
+    <EmbeddedResource Remove="Filter\**" />
+    <EmbeddedResource Remove="OperationException\**" />
+    <None Remove="Filter\**" />
+    <None Remove="OperationException\**" />
   </ItemGroup>
 
 </Project>

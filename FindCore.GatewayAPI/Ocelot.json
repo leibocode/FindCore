@@ -1,17 +1,17 @@
 ﻿{
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/api/users",
-      "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/users",
-      "UpstremaHttpMethod": [ "Get", "Patch" ],
-      "ServiceName": "UserAPI",
-      "LoadBalancer": "LeastConnection",
-      "UserServiceDisovery": true,
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": [ "user_api" ]
-      }
+      },
+      "DownstreamPathTemplate": "/api/users",
+      "DownstreamScheme": "http",
+      "LoadBalancer": "LeastConnection",
+      "ServiceName": "UserAPI",
+      "UpstreamPathTemplate": "/users",
+      "UpstremaHttpMethod": [ "Get", "Patch" ],
+      "UserServiceDisovery": true
     },
     {
       "DownstreamPathTemplate": "/api/users/tags",

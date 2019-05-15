@@ -28,8 +28,7 @@ namespace FindCore.UserAPI.Controllers
         /// <summary>
         /// 登录用户获取个人信息
         /// </summary>
-        /// <returns></returns>
-        [Route("")]
+        /// <returns>OKResult</returns>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -81,7 +80,7 @@ namespace FindCore.UserAPI.Controllers
         [Route("tags")]
         public async Task<IActionResult> GetUsersTagsAsync()
         {
-            return Ok(await _dbContext.AppUsers.Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync());
+            return Ok(await _dbContext.AppUsers.Where(b => b.Id == UserIdentity.UserId).ToListAsync());
         }
 
         /// <summary>
@@ -110,7 +109,7 @@ namespace FindCore.UserAPI.Controllers
 
             if (entity == null)
             {
-                _logger.LogInformation($"查询");
+                return BadRequest();
 
             }
 

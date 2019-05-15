@@ -1,4 +1,5 @@
 using FindCore.UserAPI.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using Xunit;
 
@@ -8,7 +9,7 @@ namespace User.API.UnitTests
     {
         private UserContext GetUserDbContext()
         {
-            return null;
+
         }
 
         [Fact]

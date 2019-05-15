@@ -15,6 +15,5 @@ namespace FindCore.ContactAPI.Controllers
         {
             _logger = logger;
         }
-
     }
 }

@@ -24,23 +24,12 @@ namespace FindCore.IdentityAPI.Authentication
 
         public string GrantType => "sms_auth_code";
 
-        public async Task ValidateAsync(ExtensionGrantValidationContext context)
-        {
-            var phone = context.Request.Raw["phone"];
-            var code = context.Request.Raw["auth-code"];
-            var errorValidationResult = new GrantValidationResult(TokenRequestErrors.InvalidGrant);
+        //public async Task ValidateAsync(ExtensionGrantValidationContext context)
+        //{
+        //    var phone = context.Request.Raw["phone"];
+        //    var code = context.Request.Raw["auth-code"];
+        //    var errorValidationResult = new GrantValidationResult(TokenRequestErrors.InvalidGrant);
 
-            if (string.IsNullOrWhiteSpace(phone) || string.IsNullOrWhiteSpace(code))
-            {
-                context.Result = errorValidationResult;
-                return;
-
-            }
-
-            if ()
-            {
-
-            }
-        }
+        //}
     }
 }

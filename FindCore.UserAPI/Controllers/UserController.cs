@@ -33,7 +33,7 @@ namespace FindCore.UserAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var users = await _dbContext.Users.AsNoTracking()
+            var users = await _dbContext.AppUsers.AsNoTracking()
                                .Include(u => u.Properties).SingleOrDefaultAsync(b => b.Id == UserIdentity.UserId);
             if (User == null)
                 throw new OperationCanceledException();
@@ -52,12 +52,12 @@ namespace FindCore.UserAPI.Controllers
         public async Task<IActionResult> CheckOrCreateUser([FromBody] string phone)
         {
             //todo:phone验证
-            var user = await _dbContext.Users.SingleOrDefaultAsync(b => b.Phone == phone);
+            var user = await _dbContext.AppUsers.SingleOrDefaultAsync(b => b.Phone == phone);
 
             if (user == null)
             {
                 user = new AppUser() { Phone = phone };
-                await _dbContext.Users.AddAsync(user);
+                await _dbContext.AppUsers.AddAsync(user);
                 await _dbContext.SaveChangesAsync();
             }
 
@@ -81,7 +81,7 @@ namespace FindCore.UserAPI.Controllers
         [Route("tags")]
         public async Task<IActionResult> GetUsersTagsAsync()
         {
-            return Ok(await _dbContext.UserTags.Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync());
+            return Ok(await _dbContext.AppUsers.Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync());
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace FindCore.UserAPI.Controllers
         [Route("search/{phone}")]
         public async Task<IActionResult> Search(string phone)
         {
-            return Ok(await _dbContext.Users.Include(b => b.Properties).SingleOrDefaultAsync(b => b.Phone == phone));
+            return Ok(await _dbContext.AppUsers.Include(b => b.Properties).SingleOrDefaultAsync(b => b.Phone == phone));
         }
 
 
@@ -106,7 +106,7 @@ namespace FindCore.UserAPI.Controllers
         [Route("get-useringo/{id}")]
         public async Task<IActionResult> GetUserBaseInfAsync(int id)
         {
-            var entity = await _dbContext.Users.SingleOrDefaultAsync(b => b.Id == id);
+            var entity = await _dbContext.AppUsers.SingleOrDefaultAsync(b => b.Id == id);
 
             if (entity == null)
             {
@@ -125,38 +125,90 @@ namespace FindCore.UserAPI.Controllers
         }
 
         /// <summary>
-        /// 局部更新
+        /// {
+        ///    op:'replace','remove',replace'
+        ///    path
+        ///    value
+        /// }
         /// </summary>
         /// <param name="patch"></param>
         /// <returns></returns>
         [HttpPatch]
         public async Task<IActionResult> Patch([FormBody]JsonPatchDocument<AppUser> patch)
         {
-            var 
+            var user = await _dbContext.AppUsers
+                                       .SingleOrDefaultAsync(x => x.Id == UserIdentity.UserId);
+            if (user == null)
+            {
+                return BadRequest();
+            }
+            //将需要更新的数据复制给对象
+            patch.ApplyTo(user);
+            //不使用 EF 进行追踪appUser实体的properties属性
+            foreach (var item in user?.Properties)
+            {
+                _dbContext.Entry(item).State = EntityState.Detached;
+            }
+            var currentPro = user.Properties;
+            var originPros = await _dbContext.AppUserProperties
+                                   .AsNoTracking().Where(b => b.AppUserId == UserIdentity.UserId).ToListAsync();
+            var allPros = originPros.Union(currentPro).Distinct();
+            var addRang = allPros.Except(originPros);
+            var removeRang = originPros.Except(currentPro);
+             _dbContext.Remove(removeRang);
+                
+            using (var trans = await _dbContext.Database.BeginTransactionAsync())
+            {
+            
+                await _dbContext.AddRangeAsync(user);
+                await _dbContext.SaveChangesAsync();
+
+                trans.Commit();
+            }
+            return Ok(user);
         }
 
-        ///// <summary>
-        ///// 更改标签
-        ///// </summary>
-        ///// <param name="tags"></param>
-        ///// <returns></returns>
-        //[HttpPut]
-        //[Route("update-tags")]
-        //public async Task<IActionResult> UpdateTags([FormBody]string[] tags)
+        /// <summary>
+        /// 更改标签
+        /// </summary>
+        /// <param name="tags"></param>
+        /// <returns></returns>
+        [HttpPut]
+        [Route("update-tags")]
+        public async Task<IActionResult> UpdateTags([FormBody]string[] tags)
+        {
+             // 可空运算符
+             // a ?? b 当a为null时则返回b，a不为null时则返回a本身
+
+             tags = tags ?? new string[] { };
+            var originList = await _dbContext.AppUserTags
+                                 .Where(x => x.AppUserId == UserIdentity.UserId).Select(x => x.Tag).ToListAsync();
+            var removeTags = originList.Except(tags).ToList();
+            var addTags = tags.Except(originList).ToList();
+            await _dbContext.AddRangeAsync(addTags.Select(x => new UserTag()
+            {
+                Tag =x,
+                CreateTime =DateTime.Now,
+                AppUserId = UserIdentity.UserId
+            }));
+            var removeList = await _dbContext.AppUserTags.Where(x => x.AppUserId == UserIdentity.UserId)
+                   .Where(x => removeTags.Contains(x.Tag)).ToListAsync();
+            _dbContext.RemoveRange(removeList);
+            await _dbContext.SaveChangesAsync();
+            return NoContent();//204
+        }
+
+        //[HttpGet]
+        //[Route("baseInfo/{userid}")]
+        //public async Task<IActionResult> BaseInfo(int userid)
         //{
-        //    tags = tags ?? new string[] { };
-        //    var originList = await _dbContext.UserTags
-        //                          .Where(x => x.AppUserId == UserIdentity.UserId)
-        //                          .Select(x => x.Tag).ToListAsync();
-        //    var removeTags = originList.Except(tags).ToList();
-        //    var addTags = tags.Except(originList).ToList();
-        //    await _dbContext.AddRangeAsync(addTags.Select(x => new UserTag()
+        //    var appUser = await _dbContext.AppUsers.SingleOrDefaultAsync(x => x.Id == userid);
+        //    if (appUser == null)
         //    {
-        //        AppUserId = UserIdentity.UserId,
-        //        Tag = x,
-        //        CreateTime = DateTime.Now
-        //    }));
-        //    var removeList = await _dbContext.Users.Where(x=>)
+        //        return BadRequest();
+        //    }
+
+        //    //var baseInfo = new BaseIn
 
         //}
 
